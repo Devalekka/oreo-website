@@ -1,0 +1,148 @@
+
+ /* About.css */
+
+nav {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  padding: 1em;
+  position: relative; /* Set relative positioning */
+  z-index: 10; /* Higher z-index to place it above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Change as needed */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.about-section {
+  background-image: url('https://ik.imagekit.io/awwybhhmo/satellite_images/thai/beyondmenu/hero/12.jpg?tr=w-3840,q-50');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Ensure content doesn’t overflow */
+  height: 75vh;
+}
+
+.about-container {
+  background: rgba(255, 255, 255, 0.95); /* Slightly less transparent for better readability */
+  padding: 60px;
+  border-radius: 20px;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+  position: relative;
+  z-index: 1;
+  margin-right: 500px;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0) 80%);
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.about-container:hover {
+  transform: translateY(-15px); /* More pronounced lift */
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+  background-color: rgba(255, 255, 255, 1); /* Solid background on hover */
+}
+
+.about-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-container h3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50%;
+  height: 5px;
+  background: #37de74; /* Accent line under the heading */
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.about-container p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.0rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-button {
+  background-color: #37de74;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.about-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.about-button:hover {
+  background-color: #2fb968;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+
+

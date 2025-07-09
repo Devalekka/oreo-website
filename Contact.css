@@ -1,0 +1,132 @@
+
+nav {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  padding: 1em;
+  position: relative; /* Set relative positioning */
+  z-index: 10; /* Higher z-index to place it above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Change as needed */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+ 
+ .contactbg { 
+  background-image: url('https://papers.co/wallpaper/papers.co-sn08-pink-pastel-blur-gradation-36-3840x2400-4k-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  background: rgba(0, 0, 0, 0.7); /* Dark background for readability */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Fixed width for consistency */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  background-size: cover;
+  width: 82px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo1 {
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/free-google-mail-new-logo-icon-download-in-svg-png-gif-file-formats--gmail-one-ui-pack-logos-icons-3955524.png');
+}
+
+.logo2 {
+  background-image: url('https://png.pngtree.com/png-vector/20230413/ourmid/pngtree-3d-location-icon-clipart-in-transparent-background-vector-png-image_6704161.png');
+}
+
+.logo3 {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4st3cLMPeFCTeNvgTVZGJS_K3GmLCJkgtDA&s');
+}
+
+.contact-details h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.contact-details p {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.contact-details a {
+  color: #ffeb3b; /* Bright color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+
